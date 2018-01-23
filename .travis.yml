@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '7'
+- '8'
+cache:
+  directories:
+  - node_modules
+script:
+  - npm run test
+  - npm run lint
+after_success:
+  - npm run coveralls
+deploy:
+  provider: npm
+  email: dev@monumentum.io
+  api_key:
+    secure: YYrhX6TGCKs9YZShr+XEN6Jz4LAU5u1mNydd78pMykOUKK/LaBz1ZwBss0QmVMCv+btpYluupciYkZrj3WR1QDkBOvn1ifVbdAcqRYA6vi477g4d6auE6AtvUtXXT9D5P93kAaR8m7DKgD1XKO/IaPkSBU3OuGy2HmeV41uQ6Qwy6FVmjaY+lBupvqIsHc0GycL/O3nN7GcZC14l+2vpnK7anslgroyScWAWqsIsJ5vjEPYzpPow7AL2Ha7KFPKR6TiS3Xz23HHXSWSWsjdBZ1w/dvaAAMXFjP6xWa6R6znVRNB6opkuj4ptYlaRiwYRthvucV0owxxeRHouscg5xO/Qf+dkN+M0jdikCk2uzRPFcigFB1+w/jdFeownjUCutDB3GajARQ4qxUsxJA9fESHBOxY68PUimHVab87MQruy7I0gK3Itsw0SUTSmObVX1y9IxBw/G21JrBaa5BA1bxOXqMeL+h4IYIT//1biP3iInHHK/4af33idw4A0TYEaJx34YijokeW720U6NP5CpNrXrMBAhvRkiHgYlFGApq0KIePt+sIMCRExqOILJmEubYuucS+HXo0jwg/9toRPoS+BwISbIW+bGhvai/O+OJOhxHuoEiw6ptccUJrzwEJDn1P+hSDOAQrQhsi0BtPyXjlhy1w+21pyTv1dm8ha2qc=

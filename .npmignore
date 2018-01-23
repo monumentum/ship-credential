@@ -1,0 +1,7 @@
+lib/*.spec.js
+config.jest.json
+.travis.yml
+coverage
+eslintrc
+.gitignore
+.git

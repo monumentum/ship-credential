@@ -1,0 +1,28 @@
+{
+    "roots": [
+      "lib"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "coveragePathIgnorePatterns": [
+        "<rootDir>/node_modules/"
+    ],
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "coverageReporters": [
+      "html",
+      "lcov"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 99,
+        "branches": 99,
+        "functions": 99,
+        "lines": 99
+      }
+    }
+}
