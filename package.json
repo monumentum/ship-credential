@@ -1,0 +1,40 @@
+{
+  "name": "ship-credential",
+  "version": "0.1.0",
+  "description": "An simple jwt authentication module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config config.jest.json --coverage",
+    "test:dev": "jest --config config.jest.json --watch",
+    "lint": "eslint --config .eslintrc src",
+    "lint:fix": "eslint --config .eslintrc src --fix",
+    "coveralls": "cat coverage/lcov.info | coveralls"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monumentum/ship-credential.git"
+  },
+  "keywords": [
+    "node",
+    "es6",
+    "jwt",
+    "auth",
+    "astrostack",
+    "astronode"
+  ],
+  "author": "Guilherme Diego",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monumentum/ship-credential/issues"
+  },
+  "homepage": "https://github.com/monumentum/ship-credential#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.1.1",
+    "lodash": "^4.17.4"
+  }
+}
