@@ -2,7 +2,7 @@
   "name": "ship-credential",
   "version": "0.2.0",
   "description": "An simple jwt authentication module",
-  "main": "index.js",
+  "main": "lib/ship-credential.js",
   "scripts": {
     "test": "jest --config config.jest.json --coverage",
     "test:dev": "jest --config config.jest.json --watch",
